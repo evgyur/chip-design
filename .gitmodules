@@ -1,0 +1,6 @@
+[submodule "upstreams/design-taste-frontend"]
+	path = upstreams/design-taste-frontend
+	url = https://github.com/evgyur/design-taste-frontend.git
+[submodule "upstreams/gpt-taste"]
+	path = upstreams/gpt-taste
+	url = https://github.com/evgyur/gpt-taste.git

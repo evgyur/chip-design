@@ -1,0 +1,4 @@
+interface:
+  display_name: "Chip Design"
+  short_description: "Routes /design work with integrated taste upstreams"
+  default_prompt: "Use $chip-design to route this design request and check integrated upstreams."
