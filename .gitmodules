@@ -4,3 +4,47 @@
 [submodule "upstreams/gpt-taste"]
 	path = upstreams/gpt-taste
 	url = https://github.com/evgyur/gpt-taste.git
+
+[submodule "upstreams/superdesign-skill"]
+	path = upstreams/superdesign-skill
+	url = https://github.com/superdesigndev/superdesign-skill.git
+
+[submodule "upstreams/better-design"]
+	path = upstreams/better-design
+	url = https://github.com/marvkr/better-design.git
+
+[submodule "upstreams/design-taste"]
+	path = upstreams/design-taste
+	url = https://github.com/madebymustafa/design-taste.git
+
+[submodule "upstreams/canvas-ui"]
+	path = upstreams/canvas-ui
+	url = https://github.com/DavidHDev/canvas-ui.git
+
+[submodule "upstreams/shaders"]
+	path = upstreams/shaders
+	url = https://github.com/paper-design/shaders.git
+
+[submodule "upstreams/uilayouts"]
+	path = upstreams/uilayouts
+	url = https://github.com/ui-layouts/uilayouts.git
+
+[submodule "upstreams/hyperiux-components"]
+	path = upstreams/hyperiux-components
+	url = https://github.com/Hyperiux-Immersion-Labs/hyperiux-components.git
+
+[submodule "upstreams/motion-primitives"]
+	path = upstreams/motion-primitives
+	url = https://github.com/ibelick/motion-primitives.git
+
+[submodule "upstreams/cursify"]
+	path = upstreams/cursify
+	url = https://github.com/ui-layouts/cursify.git
+
+[submodule "upstreams/trickle-UI-kit"]
+	path = upstreams/trickle-UI-kit
+	url = https://github.com/akaieuan/trickle-UI-kit.git
+
+[submodule "upstreams/stageshow"]
+	path = upstreams/stageshow
+	url = https://github.com/benjitaylor/skills.git
