@@ -8,7 +8,7 @@ import subprocess
 ROOT = Path(__file__).resolve().parents[1]
 EXPECTED = {'design-taste-frontend', 'gpt-taste', 'superdesign-skill', 'better-design',
             'design-taste', 'canvas-ui', 'shaders', 'uilayouts', 'hyperiux-components',
-            'motion-primitives', 'cursify', 'trickle-UI-kit', 'stageshow'}
+            'motion-primitives', 'cursify', 'trickle-UI-kit', 'stageshow', 'tuffui'}
 
 
 def git(*args, cwd=ROOT):
@@ -21,7 +21,7 @@ def main():
     args = parser.parse_args()
     pins = dict(re.findall(r'\| `([^`]+)` `([0-9a-f]{40})` \|',
                            (ROOT / 'references/source-modules.md').read_text()))
-    assert len(pins) == 11, 'expected eleven modern manifest pins'
+    assert len(pins) == 12, 'expected twelve modern manifest pins'
     entries = {}
     for line in git('ls-files', '--stage', 'upstreams').splitlines():
         mode, sha, stage, path = line.split()
@@ -46,7 +46,7 @@ def main():
         if '://' not in link:
             assert (ROOT / link).is_file(), f'missing reference: {link}'
     label = 'gitlink/manifest metadata only; checkouts NOT exercised' if args.metadata_only else 'gitlinks, pins and initialized clean checkouts'
-    print(f'PASS: 13 sources (2 legacy + 11 modern); {label}; router contracts')
+    print(f'PASS: 14 sources (2 legacy + 12 modern); {label}; router contracts')
 
 
 if __name__ == '__main__':

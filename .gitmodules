@@ -48,3 +48,6 @@
 [submodule "upstreams/stageshow"]
 	path = upstreams/stageshow
 	url = https://github.com/benjitaylor/skills.git
+[submodule "upstreams/tuffui"]
+	path = upstreams/tuffui
+	url = https://github.com/yurigdesigner/tuffui.git
