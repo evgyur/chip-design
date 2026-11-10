@@ -51,3 +51,6 @@
 [submodule "upstreams/tuffui"]
 	path = upstreams/tuffui
 	url = https://github.com/yurigdesigner/tuffui.git
+[submodule "upstreams/dembrandt"]
+	path = upstreams/dembrandt
+	url = https://github.com/dembrandt/dembrandt.git

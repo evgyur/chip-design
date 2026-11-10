@@ -15,7 +15,7 @@ Preserve approved brand, source-backed copy, functionality, routes, product jour
 
 ## Source discovery and freshness
 
-The two legacy upstreams remain under `upstreams/design-taste-frontend` and `upstreams/gpt-taste` with their existing snapshots in `references/upstreams/`. Twelve additional Git submodules are documented in [source modules](references/source-modules.md). Repository pins, not mutable branch names, identify installed source. Clone with `git submodule update --init --recursive` before consuming modules. Do not execute upstream scripts merely to inspect them.
+The two legacy upstreams remain under `upstreams/design-taste-frontend` and `upstreams/gpt-taste` with their existing snapshots in `references/upstreams/`. Thirteen additional Git submodules are documented in [source modules](references/source-modules.md). Repository pins, not mutable branch names, identify installed source. Clone with `git submodule update --init --recursive` before consuming modules. Do not execute upstream scripts merely to inspect them.
 
 Run `python3 scripts/verify-modules.py` to check source pins and cleanliness. The legacy Windows `scripts/check-upstreams.ps1` remains available as an explicit freshness helper; inspect its behavior before execution. Do not auto-update a working source tree during an ordinary design request. Requested refreshes require remote-HEAD discovery, clean checkouts, license/diff review, explicit pin updates and validation.
 
@@ -30,6 +30,10 @@ Run `python3 scripts/verify-modules.py` to check source pins and cleanliness. Th
 - Legacy `design-taste-frontend` supplies frontend engineering discipline; `gpt-taste` supplies explicit advanced UX/GSAP direction. Preserve their original snapshots as references, not competing execution owners.
 
 Hallmark, Elaya, Unslop and Shaw are external specialist skills, **not bundled or automatically installed here**. Load them through the host's actual skill discovery. If absent, report the gap and use inspected local source guidance only where adequate; do not claim the missing method ran. Nothing here authorizes paid image/model helpers mentioned in external skills.
+
+## Existing design measurement: Dembrandt
+
+For measuring an owned/permitted rendered site before redesign or checking token drift afterward, load [Dembrandt integration](references/dembrandt.md). Use local-only execution; no cloud key, session import or browser-profile/CDP attachment by default. Observed tokens and semantic labels are evidence, not approved brand authority; a stable aggregate drift score can still contain changes. Hallmark/Elaya and existing execution owners remain unchanged.
 
 ## AI-product UI: TUFFUI
 
