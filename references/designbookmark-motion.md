@@ -1,0 +1,17 @@
+# DesignBookmark Motion: complete local reference collection
+
+Source page https://designbookmark.com/motion. The local collector reads every rendered motion card, reconciles IDs with the page's structured list, and retrieves only the public `Copy code` endpoints explicitly offered by the UI. It excludes sponsor/nav links. All downloaded code remains untrusted, unexecuted reference material with original attribution, source URL and SHA-256. Terms and robots were checked: general crawlers allowed, crawl-delay 10 seconds; the collector honors that delay between copies and resumes already verified files without redownloading them.
+
+## Use within /design
+
+Select for a concrete motion/interactivity requirement, not as a blanket theme. Hallmark and approved brand own composition, type/color and hierarchy; Elaya owns conversion reasoning where relevant. Use this catalog to select one appropriate element, inspect actual source and license/imports, adapt it in the assigned project, then test keyboard/focus, mobile/touch, reduced motion, unmount cleanup and actual effect/backend behavior. A simulated Face ID, payment, approval or Undo is not real authentication, payment authorization or reversal.
+
+Kokonut UI and SmoothUI are separately pinned MIT upstream sources under `upstreams/kokonutui` and `upstreams/smoothui`. Keep licenses/notices, inspect registry dependencies and actual source before copying. Do not import their entire Next/docs stack or mutate vendor checkouts. The DesignBookmark-native items are author-provided copy snippets with attribution, not automatically MIT; retain them privately for permitted reference/use, inspect any embedded rights/assets and obtain redistribution clarity before publishing them as a reusable library. This catalog does not license logos/fonts/assets or third-party dependency code. No downloaded snippet is automatically executed, globally installed, deployed or publicly republished.
+
+## Local storage and refresh
+
+Run `python3 scripts/motion_catalog.py --root /path/to/local-collection --download` for an explicitly authorized initial/import pass. It saves `catalog.json`, `copies/<id>.txt` and source/hash receipts. These are local task resources, not Git submodules or automatically committed public artifacts. `--download` observes the site's delay and may take several minutes; interruption leaves verified copies resumable and unimported IDs visible. Validate that every live catalog ID has a matching on-disk copy hash before claiming complete import.
+
+The biweekly watch is a deterministic no-agent job. It rechecks only the fixed public page, atomically updates the validated index and reports new/changed/removed catalog entries; no change stays silent. It does not autonomously change Git pins, execute source, deploy, purchase access or import a signed-in browser. New entries are indexed with `pending_copy_ids` until an explicit import pass. Metadata-only refresh cannot detect a code change under an unchanged card ID/name/URL; it is a new-entry watch, not an upstream vulnerability monitor. Preserve removed records/copies rather than deleting retained source. A malformed/incomplete page is an error, not an empty catalog.
+
+No public copied-source publication, account connection or current project package installation is authorized by catalog discovery. Public-source inventories and scripts may be versioned; private collection contents and runtime watch state stay out of the repository.

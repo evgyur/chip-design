@@ -54,3 +54,9 @@
 [submodule "upstreams/dembrandt"]
 	path = upstreams/dembrandt
 	url = https://github.com/dembrandt/dembrandt.git
+[submodule "upstreams/kokonutui"]
+	path = upstreams/kokonutui
+	url = https://github.com/kokonut-labs/kokonutui.git
+[submodule "upstreams/smoothui"]
+	path = upstreams/smoothui
+	url = https://github.com/educlopez/smoothui.git
