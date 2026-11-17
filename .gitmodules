@@ -60,3 +60,6 @@
 [submodule "upstreams/smoothui"]
 	path = upstreams/smoothui
 	url = https://github.com/educlopez/smoothui.git
+[submodule "upstreams/creative-tim-ui"]
+	path = upstreams/creative-tim-ui
+	url = https://github.com/creativetimofficial/ui.git

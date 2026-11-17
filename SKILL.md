@@ -15,7 +15,7 @@ Preserve approved brand, source-backed copy, functionality, routes, product jour
 
 ## Source discovery and freshness
 
-The two legacy upstreams remain under `upstreams/design-taste-frontend` and `upstreams/gpt-taste` with their existing snapshots in `references/upstreams/`. Fifteen additional Git submodules are documented in [source modules](references/source-modules.md). Repository pins, not mutable branch names, identify installed source. Clone with `git submodule update --init --recursive` before consuming modules. Do not execute upstream scripts merely to inspect them.
+The two legacy upstreams remain under `upstreams/design-taste-frontend` and `upstreams/gpt-taste` with their existing snapshots in `references/upstreams/`. Sixteen additional Git submodules are documented in [source modules](references/source-modules.md). Repository pins, not mutable branch names, identify installed source. Clone with `git submodule update --init --recursive` before consuming modules. Do not execute upstream scripts merely to inspect them.
 
 Run `python3 scripts/verify-modules.py` to check source pins and cleanliness. The legacy Windows `scripts/check-upstreams.ps1` remains available as an explicit freshness helper; inspect its behavior before execution. Do not auto-update a working source tree during an ordinary design request. Requested refreshes require remote-HEAD discovery, clean checkouts, license/diff review, explicit pin updates and validation.
 
@@ -42,6 +42,10 @@ For measuring an owned/permitted rendered site before redesign or checking token
 ## AI-product UI: TUFFUI
 
 For React agent chat, tool-call/approval queues, traces, memory, context/usage or interactive answers, load [TUFFUI integration](references/tuffui.md). Read the selected pinned component and docs before passing it into the existing implementation. Hallmark/brand remain the visual authority; TUFFUI does not create backend permissions, make demo runs real, or prove tool execution. Keep source and runtime boundaries explicit. Ordinary landings and native desktop requests do not force this module.
+
+## Product blocks on shadcn/ui: Creative Tim UI
+
+For an assembled React/Next.js product screen — account, billing, checkout, CRUD, admin, e-commerce, blog, pricing, testimonials, FAQ, modals — load [Creative Tim UI integration](references/creative-tim-ui.md). Read the pinned block source and its registry JSON before implementation, and resolve block names against the pinned checkout because upstream documentation lists names that do not exist at this revision. Treat it as a component library, not a visual direction: Hallmark and the approved brand keep styling authority, and the library's own orange accent is upstream's brand rather than an approved token. The pinned revision carries free-tier content only, ships no MCP server, and requires no API key; do not provision one. A block with forms or a checkout is a static demo until it is wired to the real backend.
 
 ## Combined landing workflow
 

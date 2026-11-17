@@ -8,7 +8,8 @@ import subprocess
 ROOT = Path(__file__).resolve().parents[1]
 EXPECTED = {'design-taste-frontend', 'gpt-taste', 'superdesign-skill', 'better-design',
             'design-taste', 'canvas-ui', 'shaders', 'uilayouts', 'hyperiux-components',
-            'motion-primitives', 'cursify', 'trickle-UI-kit', 'stageshow', 'tuffui', 'dembrandt', 'kokonutui', 'smoothui'}
+            'motion-primitives', 'cursify', 'trickle-UI-kit', 'stageshow', 'tuffui', 'dembrandt', 'kokonutui', 'smoothui',
+            'creative-tim-ui'}
 
 
 def git(*args, cwd=ROOT):
@@ -21,7 +22,7 @@ def main():
     args = parser.parse_args()
     pins = dict(re.findall(r'\| `([^`]+)` `([0-9a-f]{40})` \|',
                            (ROOT / 'references/source-modules.md').read_text()))
-    assert len(pins) == 15, 'expected fifteen modern manifest pins'
+    assert len(pins) == 16, 'expected sixteen modern manifest pins'
     entries = {}
     for line in git('ls-files', '--stage', 'upstreams').splitlines():
         mode, sha, stage, path = line.split()
@@ -46,7 +47,7 @@ def main():
         if '://' not in link:
             assert (ROOT / link).is_file(), f'missing reference: {link}'
     label = 'gitlink/manifest metadata only; checkouts NOT exercised' if args.metadata_only else 'gitlinks, pins and initialized clean checkouts'
-    print(f'PASS: 17 sources (2 legacy + 15 modern); {label}; router contracts')
+    print(f'PASS: 18 sources (2 legacy + 16 modern); {label}; router contracts')
 
 
 if __name__ == '__main__':
